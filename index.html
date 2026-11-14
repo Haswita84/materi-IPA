@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistem Saraf Manusia | Belajar & Kuis IPA</title>
+<style>
+:root{--ink:#18324b;--muted:#5d7185;--blue:#2463a6;--cyan:#dff5fb;--purple:#7254a8;--green:#21845b;--orange:#f2a541;--paper:#f5f8fc}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:linear-gradient(135deg,#e9f6ff,#f6f1ff 55%,#fff8e9);line-height:1.6}
+header{padding:38px 20px 32px;text-align:center;background:linear-gradient(120deg,#174f83,#347fc0 60%,#7457a6);color:white}
+header .tag{display:inline-block;padding:5px 13px;border:1px solid #ffffff80;border-radius:30px;font-size:.85rem}
+header h1{font-size:clamp(2rem,5vw,3.1rem);margin:12px 0 5px}header p{max-width:760px;margin:0 auto;color:#e9f4ff}
+nav{position:sticky;top:0;z-index:5;background:#fff;box-shadow:0 3px 12px #16395818;display:flex;justify-content:center;gap:8px;padding:10px;flex-wrap:wrap}
+nav a{color:var(--blue);text-decoration:none;font-weight:bold;padding:8px 14px;border-radius:20px}nav a:hover{background:var(--cyan)}
+main{max-width:1050px;margin:28px auto;padding:0 18px}.card{background:#fff;border-radius:18px;padding:24px;margin:18px 0;box-shadow:0 8px 25px #21476b12;border:1px solid #e6edf5}
+h2{margin-top:0;color:#205b91}h3{color:#315e87;margin-bottom:5px}.lead{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.info{background:#f2f8fd;border-left:5px solid #4c91c8;padding:15px;border-radius:12px}.info.purple{background:#f7f3ff;border-color:var(--purple)}.info.green{background:#effaf4;border-color:var(--green)}
+.diagram{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;background:#f5f8ff;padding:18px;border-radius:14px;margin:15px 0}
+.node{background:#fff;border:2px solid #8bb9df;border-radius:12px;padding:12px 16px;text-align:center;font-weight:bold;min-width:130px}.arrow{font-size:1.5rem;color:#547da5}
+ul{padding-left:22px}.pill{display:inline-block;background:#e8f2ff;color:#205b91;border-radius:20px;padding:3px 10px;font-size:.85rem;font-weight:bold}
+button{border:0;border-radius:10px;padding:11px 18px;background:var(--blue);color:#fff;font-weight:bold;cursor:pointer;font-size:1rem}button:hover{filter:brightness(1.08)}button.secondary{background:#64788c}button:disabled{opacity:.45;cursor:not-allowed}
+.question{border:1px solid #e2eaf2;border-radius:14px;padding:17px;margin:15px 0}.question h3{font-size:1.05rem;margin:0 0 12px;color:var(--ink)}
+.options{display:grid;gap:8px}.option{display:block;text-align:left;background:#f4f7fb;color:var(--ink);border:1px solid #dce6f0;font-weight:normal}.option:hover{background:#e9f3ff}.option.selected{border:2px solid var(--blue);background:#e8f2ff}.option.correct{background:#e6f8ee;border:2px solid #36a66f}.option.wrong{background:#fff0ed;border:2px solid #db6a58}
+.feedback{display:none;padding:10px 12px;margin-top:10px;border-radius:9px;background:#f1f7fc;color:#36556f}.feedback.show{display:block}
+.progress-wrap{height:10px;background:#e8eef5;border-radius:20px;overflow:hidden;margin:12px 0}.progress{height:100%;width:0;background:linear-gradient(90deg,#35a5b9,#6b65bd);transition:width .25s}
+#result{display:none;text-align:center;background:#f2f8ff;border-radius:14px;padding:22px;margin-top:18px}#score{font-size:2.5rem;font-weight:bold;color:var(--blue)}
+footer{text-align:center;color:var(--muted);padding:25px}
+@media(max-width:600px){.card{padding:17px}nav a{padding:7px 10px;font-size:.9rem}}
+</style>
+</head>
+<body>
+<header>
+  <span class="tag">IPA SMP • Kelas IX</span>
+  <h1>🧠 Sistem Saraf pada Manusia</h1>
+  <p>Pelajari cara tubuh menerima rangsangan, mengolah informasi, dan memberikan tanggapan. Setelah belajar, uji pemahamanmu melalui kuis interaktif!</p>
+</header>
+<nav>
+  <a href="#materi">Materi</a><a href="#alur">Alur Kerja</a><a href="#kuis">Kuis</a>
+</nav>
+<main>
+<section class="card" id="materi">
+  <h2>1. Apa itu sistem saraf?</h2>
+  <p>Sistem saraf adalah sistem pengendali dan pengatur kegiatan tubuh. Sistem ini menerima rangsangan dari dalam maupun luar tubuh, mengolah informasi, lalu mengirimkan perintah agar tubuh memberikan tanggapan.</p>
+  <div class="grid">
+    <div class="info"><h3>Fungsi utama</h3><ul><li>Menerima rangsangan.</li><li>Mengolah dan menafsirkan informasi.</li><li>Mengatur gerakan dan kerja organ.</li><li>Membantu tubuh merespons perubahan lingkungan.</li></ul></div>
+    <div class="info purple"><h3>Contoh sehari-hari</h3><p>Saat tangan menyentuh benda panas, reseptor kulit menerima rangsangan. Informasi diteruskan melalui saraf sehingga tangan segera ditarik.</p></div>
+  </div>
+  <h2>2. Bagian-bagian sistem saraf</h2>
+  <div class="grid">
+    <div class="info"><h3>A. Sistem saraf pusat</h3><p>Terdiri atas <b>otak</b> dan <b>sumsum tulang belakang</b>. Bagian ini menjadi pusat pengolahan informasi dan pengaturan respons.</p></div>
+    <div class="info purple"><h3>B. Sistem saraf tepi</h3><p>Terdiri atas saraf-saraf yang menghubungkan sistem saraf pusat dengan reseptor dan seluruh bagian tubuh.</p></div>
+  </div>
+  <h3>Bagian otak dan fungsinya</h3>
+  <div class="grid">
+    <div class="info"><b>Otak besar (serebrum)</b><br>Mengatur kegiatan sadar, berpikir, mengingat, bahasa, dan menafsirkan rangsangan indra.</div>
+    <div class="info"><b>Otak kecil (serebelum)</b><br>Mengatur keseimbangan dan koordinasi gerak otot.</div>
+    <div class="info"><b>Sumsum lanjutan (medula oblongata)</b><br>Mengatur fungsi tidak sadar seperti denyut jantung, pernapasan, dan menelan.</div>
+    <div class="info"><b>Sumsum tulang belakang</b><br>Menghubungkan otak dengan saraf tepi dan menjadi pusat beberapa gerak refleks.</div>
+  </div>
+  <h2>3. Sel saraf (neuron)</h2>
+  <p>Neuron adalah unit struktural dan fungsional sistem saraf. Neuron menerima dan menghantarkan impuls saraf.</p>
+  <div class="grid">
+    <div class="info"><b>Dendrit</b><br>Menerima rangsangan atau impuls menuju badan sel.</div>
+    <div class="info"><b>Badan sel</b><br>Berisi inti sel dan mengatur kegiatan sel saraf.</div>
+    <div class="info"><b>Akson (neurit)</b><br>Menghantarkan impuls menjauhi badan sel menuju neuron lain atau efektor.</div>
+    <div class="info"><b>Sinapsis</b><br>Celah penghubung tempat pesan diteruskan dari satu neuron ke sel berikutnya, umumnya dengan bantuan neurotransmiter.</div>
+  </div>
+  <h3>Jenis neuron berdasarkan fungsinya</h3>
+  <ul><li><b>Neuron sensorik:</b> membawa impuls dari reseptor menuju sistem saraf pusat.</li><li><b>Neuron penghubung (interneuron):</b> menghubungkan neuron dan memproses informasi di sistem saraf pusat.</li><li><b>Neuron motorik:</b> membawa perintah dari sistem saraf pusat menuju efektor, seperti otot atau kelenjar.</li></ul>
+  <h2>4. Gerak sadar dan gerak refleks</h2>
+  <div class="grid">
+    <div class="info green"><h3>Gerak sadar</h3><p>Gerakan yang dilakukan dengan kesadaran dan melibatkan pengolahan oleh otak. Contoh: mengambil buku atau menulis.</p></div>
+    <div class="info"><h3>Gerak refleks</h3><p>Respons cepat dan otomatis terhadap rangsangan. Contoh: menarik tangan dari benda panas. Pada refleks penarikan tangan, sumsum tulang belakang berperan dalam jalur respons cepat.</p></div>
+  </div>
+</section>
+<section class="card" id="alur">
+  <h2>5. Bagaimana impuls saraf bekerja?</h2>
+  <p>Perhatikan alur sederhana berikut untuk gerak refleks menarik tangan dari benda panas.</p>
+  <div class="diagram">
+    <div class="node">Rangsangan<br><small>benda panas</small></div><span class="arrow">→</span>
+    <div class="node">Reseptor<br><small>kulit</small></div><span class="arrow">→</span>
+    <div class="node">Neuron sensorik</div><span class="arrow">→</span>
+    <div class="node">Sumsum tulang belakang</div><span class="arrow">→</span>
+    <div class="node">Neuron motorik</div><span class="arrow">→</span>
+    <div class="node">Efektor<br><small>otot tangan</small></div>
+  </div>
+  <div class="info green"><b>Ingat!</b> Efektor adalah bagian tubuh yang melakukan tanggapan, misalnya otot yang berkontraksi atau kelenjar yang mengeluarkan zat.</div>
+  <h3>Menjaga kesehatan sistem saraf</h3>
+  <ul><li>Tidur cukup dan teratur.</li><li>Mengonsumsi makanan bergizi dan minum air yang cukup.</li><li>Berolahraga secara teratur.</li><li>Menggunakan helm dan pelindung saat berkendara atau berolahraga.</li><li>Menghindari rokok, alkohol, dan penyalahgunaan narkoba.</li></ul>
+</section>
+<section class="card" id="kuis">
+  <h2>🎯 Kuis Pemahaman</h2>
+  <p class="lead">Pilih satu jawaban yang paling tepat untuk setiap soal. Ada 15 soal pilihan ganda. Kerjakan dengan teliti, lalu tekan tombol <b>Periksa Jawaban</b>.</p>
+  <div class="pill">15 soal • Pilihan ganda</div>
+  <div class="progress-wrap"><div class="progress" id="progress"></div></div>
+  <p id="progressText">0 dari 15 soal dijawab</p>
+  <div id="questions"></div>
+  <button id="submit" onclick="checkAnswers()">Periksa Jawaban</button>
+  <button class="secondary" onclick="resetQuiz()">Ulangi Kuis</button>
+  <div id="result" aria-live="polite"><div>Nilai kamu</div><div id="score">0</div><h3 id="message"></h3><p id="summary"></p></div>
+</section>
+</main>
+<footer>Media belajar IPA • Sistem Saraf pada Manusia • Belajar, pahami, dan terus berlatih!</footer>
+<script>
+const data = [
+{q:"Apa fungsi utama sistem saraf manusia?",o:["Menghasilkan sel darah merah","Menerima, mengolah rangsangan, dan mengatur respons tubuh","Mencerna seluruh makanan","Mengangkut oksigen ke seluruh tubuh"],a:1,e:"Sistem saraf menerima rangsangan, mengolah informasi, dan mengatur tanggapan tubuh."},
+{q:"Sistem saraf pusat tersusun atas ....",o:["Otak dan sumsum tulang belakang","Otot dan tulang","Saraf sensorik dan kulit","Jantung dan paru-paru"],a:0,e:"Sistem saraf pusat terdiri atas otak dan sumsum tulang belakang."},
+{q:"Bagian otak yang berperan dalam keseimbangan dan koordinasi gerak adalah ....",o:["Otak besar","Sumsum lanjutan","Otak kecil","Sumsum tulang belakang"],a:2,e:"Otak kecil atau serebelum membantu menjaga keseimbangan dan koordinasi gerak."},
+{q:"Bagian otak yang berperan dalam berpikir, mengingat, dan gerak sadar adalah ....",o:["Otak besar","Otak kecil","Medula oblongata","Saraf tepi"],a:0,e:"Otak besar atau serebrum berperan dalam kegiatan sadar, berpikir, dan mengingat."},
+{q:"Fungsi sumsum lanjutan (medula oblongata) adalah ....",o:["Mengatur warna kulit","Mengatur denyut jantung dan pernapasan","Menghasilkan hormon pertumbuhan","Mengatur panjang tulang"],a:1,e:"Medula oblongata mengatur beberapa fungsi vital yang berlangsung tanpa disadari."},
+{q:"Unit struktural dan fungsional sistem saraf disebut ....",o:["Nefron","Neuron","Alveolus","Eritrosit"],a:1,e:"Neuron adalah sel saraf yang menerima dan menghantarkan impuls."},
+{q:"Bagian neuron yang menerima impuls menuju badan sel adalah ....",o:["Akson","Sinapsis","Dendrit","Selubung mielin"],a:2,e:"Dendrit menerima rangsangan atau impuls dan meneruskannya menuju badan sel."},
+{q:"Bagian neuron yang menghantarkan impuls menjauhi badan sel adalah ....",o:["Akson","Dendrit","Inti sel","Reseptor"],a:0,e:"Akson atau neurit membawa impuls menjauhi badan sel."},
+{q:"Neuron yang membawa impuls dari reseptor menuju sistem saraf pusat adalah ....",o:["Neuron motorik","Neuron sensorik","Interneuron","Neuron penghubung otot"],a:1,e:"Neuron sensorik membawa informasi dari reseptor menuju sistem saraf pusat."},
+{q:"Neuron motorik membawa impuls dari sistem saraf pusat menuju ....",o:["Reseptor saja","Neuron sensorik saja","Efektor seperti otot atau kelenjar","Rambut dan kuku saja"],a:2,e:"Neuron motorik mengirimkan perintah menuju efektor."},
+{q:"Ketika tangan menyentuh benda panas lalu segera ditarik, respons tersebut disebut ....",o:["Gerak refleks","Gerak tumbuh","Gerak semu","Gerak berirama"],a:0,e:"Menarik tangan dari benda panas merupakan contoh gerak refleks, yaitu respons cepat dan otomatis."},
+{q:"Pada gerak refleks menarik tangan, pusat pengolahan respons cepat yang berperan adalah ....",o:["Otak besar saja","Sumsum tulang belakang","Lambung","Jantung"],a:1,e:"Pada refleks penarikan tangan, sumsum tulang belakang menjadi pusat jalur refleks."},
+{q:"Bagian tubuh yang melaksanakan tanggapan, misalnya otot yang berkontraksi, disebut ....",o:["Reseptor","Efektor","Dendrit","Sinapsis"],a:1,e:"Efektor adalah otot atau kelenjar yang melakukan respons."},
+{q:"Celah penghubung tempat impuls diteruskan dari satu neuron ke sel berikutnya disebut ....",o:["Sinapsis","Akson","Badan sel","Dendrit"],a:0,e:"Sinapsis merupakan tempat komunikasi antara neuron dengan sel berikutnya."},
+{q:"Kebiasaan yang tepat untuk menjaga kesehatan sistem saraf adalah ....",o:["Kurang tidur setiap hari","Mengabaikan keselamatan saat berkendara","Mengonsumsi makanan bergizi dan tidur cukup","Menyalahgunakan zat berbahaya"],a:2,e:"Tidur cukup, gizi seimbang, olahraga, dan menghindari zat berbahaya membantu menjaga kesehatan sistem saraf."}
+];
+let answers = Array(data.length).fill(null), submitted=false;
+function render(){
+ const root=document.getElementById('questions');root.innerHTML='';
+ data.forEach((item,i)=>{
+  const box=document.createElement('div');box.className='question';box.id='q'+i;
+  const title=document.createElement('h3');title.textContent=(i+1)+'. '+item.q;box.appendChild(title);
+  const opts=document.createElement('div');opts.className='options';
+  item.o.forEach((opt,j)=>{
+   const b=document.createElement('button');b.className='option';b.textContent=String.fromCharCode(65+j)+'. '+opt;b.type='button';
+   if(answers[i]===j)b.classList.add('selected');
+   b.disabled=submitted;b.onclick=()=>{answers[i]=j;render();};opts.appendChild(b);
+  });
+  box.appendChild(opts);
+  const fb=document.createElement('div');fb.className='feedback';fb.id='fb'+i;
+  if(submitted){fb.classList.add('show');fb.innerHTML=(answers[i]===item.a?'✅ <b>Benar.</b> ':'❌ <b>Belum tepat.</b> ')+item.e;
+   [...opts.children].forEach((b,j)=>{if(j===item.a)b.classList.add('correct');else if(j===answers[i])b.classList.add('wrong')});
+  }
+  box.appendChild(fb);root.appendChild(box);
+ });
+ updateProgress();
+}
+function updateProgress(){let n=answers.filter(x=>x!==null).length;document.getElementById('progress').style.width=(n/data.length*100)+'%';document.getElementById('progressText').textContent=n+' dari '+data.length+' soal dijawab';}
+function checkAnswers(){
+ if(answers.some(x=>x===null)){const first=answers.indexOf(null);document.getElementById('q'+first).scrollIntoView({behavior:'smooth',block:'center'});alert('Masih ada soal yang belum dijawab. Lengkapi semua soal terlebih dahulu.');return;}
+ submitted=true;render();let correct=answers.filter((x,i)=>x===data[i].a).length;let score=Math.round(correct/data.length*100);
+ document.getElementById('score').textContent=score;document.getElementById('message').textContent=score>=86?'Hebat! Pemahamanmu sangat baik.':score>=70?'Bagus! Terus tingkatkan pemahamanmu.':score>=50?'Tetap semangat! Pelajari kembali bagian yang belum dipahami.':'Jangan menyerah. Baca kembali materi dan coba lagi.';
+ document.getElementById('summary').textContent='Jawaban benar: '+correct+' dari '+data.length+'. Perhatikan pembahasan pada setiap soal untuk belajar dari jawabanmu.';
+ document.getElementById('result').style.display='block';document.getElementById('submit').disabled=true;document.getElementById('result').scrollIntoView({behavior:'smooth'});
+}
+function resetQuiz(){answers=Array(data.length).fill(null);submitted=false;document.getElementById('result').style.display='none';document.getElementById('submit').disabled=false;render();document.getElementById('kuis').scrollIntoView({behavior:'smooth'});}
+render();
+</script>
+</body>
+</html>
